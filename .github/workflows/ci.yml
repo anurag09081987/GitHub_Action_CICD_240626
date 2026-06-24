@@ -32,6 +32,7 @@ jobs:
 
       - name: terraform validate
         working-directory: ./RG_SA
+        run: terraform validate
 
       - name: terraform plan
         working-directory: ./RG_SA
