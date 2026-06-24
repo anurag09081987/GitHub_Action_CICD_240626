@@ -3,7 +3,7 @@ name: CD_Work
 on:
   push:
     branches:
-      -main
+      - main
 
 permissions:
   id-token: write
