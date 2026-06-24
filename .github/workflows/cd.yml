@@ -29,4 +29,8 @@ jobs:
         
       - name: terraform init
         working-directory: ./RG_SA
-        run: terraform apply --auto-approve
+        run: terraform init
+
+      - name: terraform apply
+        working-directory: ./RG_SA
+        run: terraform apply --auto-approve  
