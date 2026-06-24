@@ -9,3 +9,7 @@ resource "azurerm_storage_account" "this"{
     account_tier = "Standard"
     account_replication_type = "ZRS"
 }
+resource "azurerm_resource_group" "this1"{
+    name = "anurag1"
+    location = "central india"
+}
