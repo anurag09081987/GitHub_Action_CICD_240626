@@ -26,5 +26,16 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }} 
 
+      - name: terraform init
+        working-directory: ./RG_SA
+        run: terraform init
+
+      - name: terraform validate
+        working-directory: ./RG_SA
+
+      - name: terraform plan
+        working-directory: ./RG_SA
+        run: terraform plan
+
       
     
